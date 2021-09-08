@@ -1,0 +1,92 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page{
+    width: 100%;
+}
+
+#botao{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: transparent;
+    color: tomato;
+    border: 2px solid tomato;
+}
+#botao:active{
+    background-color: tomato;
+    color: white;
+    
+}
+#resultado{
+    width: 100%;
+    max-width: 500px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.resultados{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grafico{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#grafico{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.div{
+    padding: 6px;
+    margin: 3px;
+    border: 2px solid lightgray;
+    text-align: center;
+}
+.divGrafico{
+    box-sizing: border-box;
+    text-align: center;
+    width: 35px;
+    margin: 3px;
+    border: 2px solid lightgray;
+    color: white;
+    background-color: tomato;
+
+}
+
+@media screen and (min-width: 820px) {
+
+    .page{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: center;
+       
+
+    }
+    .resultados{
+        width: 50%;
+        min-width: 455px
+
+    }
+    .grafico{
+        width: 50%;
+        min-width: 455px;
+
+    }
+    #grafico{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
